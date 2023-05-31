@@ -30,28 +30,69 @@
 </script>
 <!-- SimpleFX widget - END -->
 
-        <h1>Investment Basics</h1>
-        <h2>Explained for begginers</h2>
 
+<script>
+   
+    window.addEventListener('scroll', function() {
+        var navbar = document.querySelector('nav');
+        var section = document.getElementById('title-page');
+        var sectionOffset = section.offsetTop + section.offsetHeight;
+        
+        if (window.pageYOffset > sectionOffset) {
+            navbar.classList.add('show');
+        } else {
+            navbar.classList.remove('show');
+        }
+    });
+</script>
+
+
+<nav>
+    <ul>
+        <li><a href="#what-is">What Is an Investment?</a></li>
+        <li><a href="#invest-list">Types of Investment</a></li>
+        <li><a href="#why-important">Why is important to Invest?</a></li>
+        <li><a href="#how-to-container">How to Start Investing</a></li>
+    </ul>
+</nav>
+          
         
           
 
     </div>
     <div class="body-container">
         
-        <div class="what-is">
+        <div id="title-page">
+            <h1>Investment Basics</h1>
+            <h2>Explained for begginers</h2>
+        </div>
+
+        <div class="what-is" id="what-is">
         <h3>What Is an Investment?</h3>
         <p>The act of putting money or effort into something to make a profit or achieve a result.</p>
-        
-        <p>An investment is an asset bought by an individual or organization with the expectation that it will generate some future income or profit</p>
-        
+        <p>An <a href="https://www.forbes.com/advisor/investing/what-is-investing/#:~:text=Getty,income%20payments%20or%20capital%20gains." 
+             target="_blank">investment</a>  is an asset bought by an individual or organization with the expectation that it will
+              generate some future income or profit</p>
+
         <h3>How an investment really works?</h3>
 
-        <p>In the most straightforward sense, investing works when you buy an asset at a low price and sell it at a higher price. This kind of return on your investment called a capital gain. 
-            Earning returns by selling assets for a profit or realizing your capital gains—is one way to make money investing.</p>
+        <p>In the most straightforward sense, investing works 
+            when you buy an asset at a low price and sell it at a 
+            higher price. This kind of return on your 
+            investment called a capital gain. 
+            Earning returns by selling assets for
+             a profit or realizing your capital gains—is 
+            one way to make money investing.</p>
 
-         <p>In general, any action that is taken in the hopes of raising future revenue can also be considered an investment. For example, when choosing to pursue additional education, the goal is often to increase knowledge and improve skills. The upfront 
-            investment of time attending class and money to pay for tuition will hopefully result in increased earnings over the student's career.</p>   
+         <p>In general, any action that is taken in the hopes of 
+            raising future revenue can also be considered an investment. 
+            For example, when choosing to pursue additional
+             education, the goal is often to increase knowledge
+              and improve skills. The upfront 
+            investment of time attending class and money 
+            to pay for tuition will hopefully result in increased 
+            earnings over the student's career.</p>  
+           
         </div>
 
         <div class="invest-list-container" id="invest-list">
@@ -60,39 +101,39 @@
             
 
             <ul>
-                <li>Stocks/Equities
+                <li><b>Stocks/Equities</b>
                     <p>A share of stock is a piece of ownership of a public or private company. By owning stock, the investor may be entitled to dividend distributions generated from the net profit of the company. 
                         As the company becomes more successful and other investors seek to buy that company's stock, it's value can also appreciate and be sold for capital gains.</p>
                 </li>
 
-                <li>Bonds/Fixed-Income Securities
+                <li><b>Bonds/Fixed-Income Securities</b>
                     <p>A bond is an investment that often demands an upfront investment, then pays a reoccurring amount over the life of the bond. Then, when the bond matures, the investor receives the capital invested into the bond back. Similar to debt, bond investments are a mechanism for certain entities to raise money.
                          Many government entities and companies issue bonds; then, investors can contribute capital to earn a yield.</p>
                 </li>
 
-                <li>Index Funds and Mutual Funds
+                <li><b>Index Funds and Mutual Funds</b>
                     <p>Instead of selecting each individual company to invest in, index funds, mutual funds, and other types of funds often aggregate specific investments to craft one investment vehicle. For example, an investor can buy shares of a single mutual fund that holds ownership of small cap, 
                         emerging market companies instead of having to research and select each company on its own.</p>
                 </li>
 
-                <li>Real Estate
+                <li><b>Real Estate</b>
                     <p>Real estate investments are often broadly defined as investments in physical, tangible spaces that can be utilized. Land can be built on, office buildings can be occupied, warehouses can store inventory, and residential properties can house families. 
                         Real estate investments may encompass acquiring sites, developing sites for specific uses, or purchasing ready-to-occupy operating sites.</p>
                 </li>
 
-                <li>Cryptocurrency
+                <li><b>Cryptocurrency</b>
                     <p>Cryptocurrency is a blockchain-based currency used to transact or hold digital value. Cryptocurrency companies can issue coins or tokens that may appreciate in value. 
                         These tokens can be used to transact with or pay fees to transact using specific networks.</p>
                 </li>
             </ul>
 
             </div>
-            <div class="why-important">
+            <div class="why-important" id="why-important">
             <h3>Why is important to invest?</h3>
                 <p>Investing is an effective way to put your money to work and potentially build wealth. Smart investing may allow your money to outpace inflation and increase in value.
                     The greater growth potential of investing is primarily due to the power of compounding and the risk-return tradeoff.</p>
                 </div>
-        <div class="how-to-container">
+        <div class="how-to-container" id="how-to-container">
             <h3>How to start Investing?</h3>
             <p>There are many different avenues one can take when learning how to invest or where to start when putting money aside. 
                 Here are some tips for getting started in investing:</p>   

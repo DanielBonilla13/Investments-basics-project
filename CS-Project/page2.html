@@ -8,15 +8,58 @@
     <link rel="stylesheet" href="page2.css">
 </head>
 <body>
+    <!-- SimpleFX widget LIVE QUOTES BAR - START -->
+    <div class="sfx-widget" id="sfx-live-quotes-bar"></div>
+    <script type="text/javascript" src="https://widgets.simplefx.com/sfx-widget.js"></script>
+    <script type="text/javascript">
+        sfx('liveQuotesBar', {
+            containerId: 'sfx-live-quotes-bar',
+            language: 'auto',
+            width: "100%",
+            height: "100%",
+            symbols: ["BTCUSD","NINTENDO.JP","AAPL.US","VOLV.SE","GOOG.US","LHA.DE","XAUEUR","BAY.DE","TOYOTA.JP","AUDCAD","USDSEK"],
+            theme: "dark",
+            alignLogo: "left",
+            customElements: ["sessionChange"],
+    
+        })
+    </script>
+    <!-- SimpleFX widget - END -->
+
+
+    <script>
+   
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('nav');
+            var section = document.getElementById('how-much-money');
+            var sectionOffset = section.offsetTop + section.offsetHeight;
+            
+            if (window.pageYOffset > sectionOffset) {
+                navbar.classList.add('show');
+            } else {
+                navbar.classList.remove('show');
+            }
+        });
+    </script>
+
+    <nav>
+        <ul>
+            <li><a href="#how-much-money">How much money do you need</a></li>
+            <li><a href="#current-state">Consider the current state of YOUR finances</a></li>
+            <li><a href="#so-how-much">How much is that?</a></li>
+        </ul>
+    </nav>
+
 
     <div class="how-much-container">
-        
-
+      
+        <div id="how-much-money">
         <h2>How Much Money Do You Need to Start Investing</h2>
+    </div>
 
-        <h3>There’s an old saying, “it takes money to make money.” But no matter how much you have in your bank account, there’s a way to start investing today. 
+        <p>There’s an old saying, “it takes money to make money.” But no matter how much you have in your bank account, there’s a way to start investing today. 
 
-        </h3>
+        </p>
 
         <p>Investing is a key money move that can help you achieve your financial goals. So you should try to invest as much as possible, but keep in mind that investing comes with risks.
 
@@ -25,9 +68,11 @@
         <p>To figure out that maximum amount for your unique financial situation, you need to make a plan. Most of your budget is likely dedicated to covering basic expenses, like housing, transportation and food—your needs. Another portion goes toward your wants, like hobbies, dining out, going to the movies—the fun stuff. But some of your budget should be allocated toward future goals, like building up an emergency fund, going on a big vacation, buying a home and retiring one day—and that’s where investing comes in.
 
         </p>
+    
 
-        <H3>BUT FIRST Consider the current state of YOUR finances: </H3>
-
+        <div id="current-state">
+        <H3>But first you need Consider the current state of YOUR finances: </H3>
+    </div>
         <ol>
 
        <li><P>Your income: Take a close look at your monthly income and consider how much money you have leftover after you’ve covered your non-negotiable expenses. If you’re struggling to make ends meet, you may want to prioritize putting extra funds into an emergency savings account or toward a debt payment. 
@@ -44,13 +89,14 @@
 
     </ol>
 
-        <h3>So how much is that?</h3>
-
-        <p>Only you can determine your actual hard numbers. One budgeting model many experts recommend is the 50-30-20 rule putting 50 percent of your budget toward needs, 30 percent toward wants and 20 percent toward saving and investing for future needs and goals. Of that last 20 percent, consider investing whatever you don't expect to need for at least a few years. That time-frame allows you to take on the risk of short-term losses and ride it out to capture potential long-term gains.
+    <div id="so-how-much">
+        <h2>So, how much is that?</h2>
+    </div>
+        <p>Only you can determine your actual hard numbers. One budgeting model many experts recommend is the <a href="https://www.investopedia.com/ask/answers/022916/what-502030-budget-rule.asp" target="_blank"> 50-30-20 rule</a> putting 50 percent of your budget toward needs, 30 percent toward wants and 20 percent toward saving and investing for future needs and goals. Of that last 20 percent, consider investing whatever you don't expect to need for at least a few years. That time-frame allows you to take on the risk of short-term losses and ride it out to capture potential long-term gains.
 
         </p>
 
-        <p>So, if your monthly budget starts with $10,000, that means you should work to set aside $2,000—and depending on your goals, that’s the maximum you’d want to invest.
+        <p>So, if your monthly budget starts with $1000, that means you should work to set aside $200 and depending on your goals, that’s the maximum you’d want to invest.
 
         </p>
 
@@ -62,7 +108,7 @@
 
         </p>
 
-        <p>Maybe paying off debts is a top priority. In that case, you want to make a debt-repayment plan, first tackling high-interest-rate debts, like credit-card balances. But then maybe you can prioritize investing for the future ahead of paying off low-interest loans on the books, like student-loan debt or a mortgage, faster. You’d continue to pay down that debt, but invest some of your money at the same time.
+        <p>Maybe paying off debts is a top priority. In that case, you want to make a <a href="https://www.calculator.net/debt-payoff-calculator.html" target="_blank"> debt-repayment plan</a>, first tackling high-interest-rate debts, like credit-card balances. But then maybe you can prioritize investing for the future ahead of paying off low-interest loans on the books, like student-loan debt or a mortgage, faster. You’d continue to pay down that debt, but invest some of your money at the same time.
 
         </p>
 
@@ -71,25 +117,10 @@
         </p>
 
         <div>
-        <h3>Currency Converter</h3>
+        
         
 
-        <!-- SimpleFX widget CURRENCY CONVERTER - START -->
-<div class="sfx-widget" id="sfx-currency-converter"></div>
-<script type="text/javascript" src="https://widgets.simplefx.com/sfx-widget.js"></script>
-<script type="text/javascript">
-	sfx('currencyConverter', {
-		containerId: 'sfx-currency-converter',
-		language: 'en',
-		width: "100%",
-		height: "100%",
-		theme: "dark",
-		customElements: ["header"],
-		defaultCurrencyFrom: "BTC",
-		defaultCurrencyTo: "USD",
-
-	})
-</script>
+        <h4><a href="https://www.calculator.net/investment-calculator.html" target="_blank">Calculate your Investment</a></h4>
 
         </div>
 

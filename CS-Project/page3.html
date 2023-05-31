@@ -8,13 +8,66 @@
     <link rel="stylesheet" href="page3.css">
 </head>
 <body>
+
+        <!-- SimpleFX widget LIVE QUOTES BAR - START -->
+<div class="sfx-widget" id="sfx-live-quotes-bar"></div>
+<script type="text/javascript" src="https://widgets.simplefx.com/sfx-widget.js"></script>
+<script type="text/javascript">
+	sfx('liveQuotesBar', {
+		containerId: 'sfx-live-quotes-bar',
+		language: 'auto',
+		width: "100%",
+		height: "100%",
+		symbols: ["BTCUSD","NINTENDO.JP","AAPL.US","VOLV.SE","GOOG.US","LHA.DE","XAUEUR","BAY.DE","TOYOTA.JP","AUDCAD","USDSEK"],
+		theme: "dark",
+		alignLogo: "left",
+		customElements: ["sessionChange"],
+
+	})
+</script>
+<!-- SimpleFX widget - END -->
+
+
+
+
+<script>
+   
+    window.addEventListener('scroll', function() {
+        var navbar = document.querySelector('nav');
+        var section = document.getElementById('things-know');
+        var sectionOffset = section.offsetTop + section.offsetHeight;
+        
+        if (window.pageYOffset > sectionOffset) {
+            navbar.classList.add('show');
+        } else {
+            navbar.classList.remove('show');
+        }
+    });
+</script>
+
+
+<nav>
+    <ul>
+        <li><a href="#investment-goal">Investment Goal</a></li>
+        <li><a href="#timeframe">Timeframe</a></li>
+        <li><a href="#risk-tolerance">Risk Tolerance</a></li>
+        <li><a href="#asset-allocation">Asset Allocation</a></li>
+        <li><a href="#which-product">Which product to invest</a></li>
+        
+    </ul>
+</nav>
+
+
+
     <div class="content-container">
-
+        
+        <div id="things-know">
         <h2>Things you should know!</h2>
-
+    </div>
     
         <ul>
-            <li><b>1: Know your investment goal: </b>
+            <div id="investment-goal">
+            <li><b> Know your investment goal: </b>
                 <p>There are many things that we want to buy or do in our lifetime. For example, we want to buy a house, a car, travel the world, gift our parents an expensive watch or a piece of jewelry. Now, most of these dreams can be achieved by turning them into investment goals; and then figuring out how to attain them in a timely manner.
 
                 </p>
@@ -23,8 +76,11 @@
 
                 </p>
             </li>
+        </div>
 
-            <li><b>2: Know your investment timeframe:</b>
+
+            <div id="timeframe">
+            <li><b> Know your investment timeframe:</b>
                 <p>Once you are clear about your investment goal, for example, saving for your childs school admission. Then you get an idea about by when you need to achieve that goal. Say your son/daughter is 2-years-old, then you know you would need to save that money within one year. And knowing the timeframe of the goal will help you understand whether it is a short term goal, a midterm goal, or a long term goal.
 
                 </p>
@@ -37,8 +93,10 @@
 
                 </p>
             </li>
+        </div>
 
-            <li><b>3: Know your risk tolerance: </b>
+            <div id="risk-tolerance">
+            <li><b> Know your risk tolerance: </b>
                 <p>Every investor needs to find out his/her own risk tolerance. Some products can give higher returns than others, but there might be more risk involved. For example, mutual funds usually provide higher returns than FDs but being market-linked they are riskier. Decide whether you have the stomach to tolerate that risk. Taking more risk than you can tolerate can give you sleepless nights which can eventually make you stop the investment before achieving your goal. 
 
                 </p>
@@ -52,8 +110,10 @@
                 </p>
 
             </li>
+        </div>
 
-            <li><b>4: Know your asset allocation:</b>
+            <div id="asset-allocation">
+            <li><b> Know your asset allocation:</b>
                 <p>Different asset classes perform well at different times and hence if you have different asset classes in your portfolio it will ensure that investments are well-cushioned all the time. 
 
                 </p>
@@ -67,8 +127,10 @@
                 </p>
 
             </li>
+        </div>
 
-            <li> <b >5: Which product to invest in:</b>
+        <div id="which-product">
+            <li> <b > Which product to invest in:</b>
                 <p>Finally, you have to zero in on the product you want to invest in as per your investment goal. There are two things that you need to be cautious about while selecting an investment product  first, it should be as per your risk appetite and second, it should be as per investment tenure. 
 
                 </p>
@@ -85,11 +147,12 @@
 
                 </p>
             </li>
-
+        </div>
         </ul>
 
        <a href="page2.html"><button>Previuos page</button></a>
 
+       <a href="index.html" id="main-page-btn"><button>Main Page</button></a>
     </div>
 </body>
 </html>
